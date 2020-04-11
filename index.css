@@ -1,0 +1,131 @@
+header {
+  background: #101010;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+div .jumbotron {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.nav-link {
+  color: #f5f5f5 !important;
+}
+.nav-link:hover {
+  color: #d3ae67 !important;
+}
+.social-link {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  margin: 12px;
+}
+.social-link:hover {
+  width: 65px;
+  height: 65px;
+}
+#jumbo,
+.social-link.twitter,
+.social-link.facebook,
+.social-link.instagram,
+.social-link.github,
+.social-link.linkedin {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+}
+#jumbo {
+  background-image: url("https://images.unsplash.com/photo-1496167117681-944f702be1f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80");
+}
+.social-link.twitter {
+  background-image: url("https://image.flaticon.com/icons/png/512/1384/1384065.png");
+}
+.social-link.facebook {
+  background-image: url("https://image.flaticon.com/icons/png/512/174/174848.png");
+}
+.social-link.instagram {
+  background-image: url("https://image.flaticon.com/icons/png/512/733/733558.png");
+}
+.social-link.github {
+  background-image: url("https://image.flaticon.com/icons/png/512/38/38401.png");
+}
+.social-link.linkedin {
+  background-image: url("https://image.flaticon.com/icons/png/512/174/174857.png");
+}
+#carrusel {
+  color: #f5f5f5;
+}
+#carrusel .carousel-inner img {
+  max-height: 50vh !important;
+  object-fit: cover !important;
+}
+#carouselExampleCaptions {
+  position: relative;
+}
+#carouselExampleCaptions .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.content {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.imagecaption {
+  padding: 10px;
+}
+.imagecaption2 {
+  padding: 10px;
+}
+.imagecaption2 a {
+  color: #d3ae67;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.imagecaption2 a:hover {
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+.box {
+  border: 1.5px solid #d3ae67;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0px;
+  overflow: hidden;
+}
+.box img {
+  overflow: hidden;
+}
+.contact {
+  margin: 15% 10% 10% 80%;
+  width: 50vw;
+}
+table th,
+table td {
+  border: solid 2px black;
+  padding: 5px;
+}
+@media (max-width: 789px) {
+  .contact {
+    margin: 0;
+    width: 100vw;
+  }
+}
