@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<ul>
+    {% for name in names %}
+    <li>{{ name }}</li>
+    {% endfor %}
+
+    {% for email in emails %}
+    <li>{{ email }}</li>
+    {% endfor %}
+
+    {% for message in mesagges %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+<section class="container-fluid about">
+    <h2 class="mb-5 mt-5">Need Help?</h2>
+        <div class="language-cards">
+            <div class="row" align="center">
+                <div class="col-md-4">
+                    <div class="card" style="width: 50%;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-text">Angular</h3>
+                            </div>
+                        </div>
+                    </div>
+    <div class="col-md-4">
+        <div class="card" style="width: 50%;">
+            <img src="http://www.bobbyberberyan.com/wp-content/uploads/2012/03/HTML5CSS3Logos.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-text"> HTML and CSS </h2>
+             </div>
+        </div>
+    </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 50%;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-text">Javascript</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id=formulario class="mt-5">
+<div class="container-fluid">
+    <h2 class="h1-responsive font-weight-bold">Contact me</h2>
+    <p class="w-responsive mx-auto mb-3">Do you have any questions? Please do not hesitate to contact me directly.</p>
+        <div class="row">
+            <div class="col-md-6 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="{{ url_for('form') }}" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center text-md-left">
+                <button class="btn btn-primary btn-lg" onclick="document.getElementById('contact-form').submit();">Send</button>
+            </div>
+            <div class="status"></div>
+        </div>
+            <div class="col-md-4 offset-1 pt-5">
+            <div class="social">
+                <a href="https://twitter.com/miguelhemmm " class="social-link twitter " target="_blank"></a>
+                <a href="https://facebook.com/miguelhemmm " class="social-link facebook " target="_blank"></a>
+                <a href="https://github.com/miguelhemmm " class="social-link github " target="_blank"></a>
+                <a href="https://instagram.com/miguelhemmm " class="social-link instagram " target="_blank"></a>
+                <a href="https://www.linkedin.com/in/miguelhem" class="social-link linkedin" target="_blank"></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
